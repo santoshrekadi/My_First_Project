@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tk.santoshrekadi.wpm.MainActivity">
+
+<!--    <ImageView
+        android:id="@+id/imageback"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/beach" />-->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/web_hi_res_512" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/white_rect"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dp"
+                android:text="Get Started"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="10dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:text="Just a few details to get you started"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_marginBottom="30dp"/>
+
+
+
+            <AutoCompleteTextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/round_rect"
+                android:drawableLeft="@drawable/ic_user"
+                android:drawablePadding="5dp"
+                android:paddingStart="10dp"
+                android:inputType="text"
+                android:layout_marginBottom="10dp"
+                android:hint="Name" />
+            <AutoCompleteTextView
+                android:id="@+id/pwd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:inputType="textPassword"
+                android:background="@drawable/round_rect"
+                android:drawableLeft="@drawable/ic_pass"
+                android:drawablePadding="5dp"
+                android:paddingStart="8dp"
+                android:layout_marginBottom="10dp"
+                android:hint="Master Password" />
+            <AutoCompleteTextView
+                android:id="@+id/cpwd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:inputType="textPassword"
+                android:background="@drawable/round_rect"
+                android:drawableLeft="@drawable/ic_asterisk"
+                android:drawablePadding="5dp"
+                android:paddingStart="10dp"
+                android:hint="Confirm Password" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="I agree to the Terms and Conditions"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textSize="11sp"/>
+            <Button
+                android:id="@+id/Enter"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Enter"
+                android:textStyle="normal"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/enter_button"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
